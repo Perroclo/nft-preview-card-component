@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+*{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+
+:root{
+
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+--Very-dark-blue: hsl(217, 54%, 11%);
+--Very-dark-blue2:hsl(216, 50%, 16%);
+--Very-dark-blue3: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+
+body{
+
+    background-color:var(--Very-dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+
+}
+
+.encabezado{
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.imagen-fondo{
+
+position: absolute;
+background-color: hsl(178, 100%, 50%,60%);
+width: 260px;
+z-index: 999;
+height: 261px;
+border-radius: 10px 10px 10px 10px;
+opacity: 0;
+transition: opacity 0.5s ease-out;
+}
+
+.ojo{
+
+    position: absolute;
+    left: 50%;
+    top: 50%;  
+    transform: translate(-50%,-50%);
+    opacity: 1;
+    z-index: 1000;
+    
+    }
+
+.imagen-fondo:hover{
+
+opacity: 1;
+
+}
+
+
+
+.container{
+width: 300px;
+background-color: var(--Very-dark-blue2);
+display: flex;
+flex-direction: column;
+padding-left: 20px;
+padding-right: 20px;
+border-radius: 10px;
+height:61vh;
+padding-top:20px;
+margin-top: 150px;
+margin-bottom: 100px;
+}
+
+.equilibrio{
+
+    font-size: 18px;
+    color: var(--White);
+    padding-top: 15px;
+    cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+}
+
+.subtitulo{
+
+font-size: 18px;
+color: var(--Soft-blue);
+padding-top: 15px;
+font-weight: 300;
+padding-bottom: 30px;
+
+}
+
+.numeracion{
+
+color: var(--Cyan);
+flex-grow: 2;
+}
+
+.icono1{
+width: 15px;
+height: 15px;
+
+}
+
+.zonaiconos{
+
+    display: flex;
+    padding-bottom: 30px;
+
+}
+
+.dias{
+
+    color: var(--Soft-blue);
+}
+
+.linea{
+
+   background-color: red;
+}
+
+hr{
+border-color: rgb(134, 123, 123);
+
+}
+
+.creaciones{
+
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.perfil{
+
+height: 30px;
+width: 30px;
+border: 2px solid white;
+border-radius: 30px;
+margin-right: 10px;
+}
+
+.raul{
+color:var(--Cyan);
+cursor: pointer;
+
+}
+
+p{
+font-size: 18px;
+color: lightgray;
+
+}
+
+.raul:hover{
+
+color: black;
+
+}
+
+.equilibrio:hover{
+color:var(--Cyan);
+
+}
+
+.encabezado:hover{
+
+
+
+}
+
